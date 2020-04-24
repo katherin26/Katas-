@@ -11,22 +11,22 @@
 
 const numbs = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]];
 
- for( let i = 0; i < numbs.length; i++){
-   numbs[i].sort();
- }
+for (let i = 0; i < numbs.length; i++) {
+  numbs[i].sort();
+}
 
- console.log(numbs);
+console.log(numbs);
 
 //FOR LOOP--------------------------------------------------------------------------------
 
-function numb(arr){
-  let newArr= [];
-  for(let i = 0; i < arr.length;i++){
-    for(let j = 0; j <arr[i].length; j++){
+function numb(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
       newArr.push(arr[i][j]);
     }
-     }
-  return newArr.sort((a,b)=> a-b);
+  }
+  return newArr.sort((a, b) => a - b);
 }
 console.log(numb([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]));
 
